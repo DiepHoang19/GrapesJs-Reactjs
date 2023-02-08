@@ -7,18 +7,13 @@ import {
 } from 'react-router-dom'
 import Builder from "./Components/Builder/Builder";
 
-
-
 function App() {
-
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/builder" element={<Builder />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Builder />} />
+      </Routes>
+    </Router>
   );
 }
 
